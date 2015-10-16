@@ -1,0 +1,14 @@
+5394e98529bb7cd32b5a63dd3f6b5dc7 *DESCRIPTION
+60b89a95bd9d84701f6f292531a53243 *NAMESPACE
+5039f2b15c47cf4d779bb50d163d5086 *R/keyplayer.R
+0841361337311c693b0b4fb3e0768ea4 *man/contract.Rd
+bf529e15196daf03db61e8888f7dc8f7 *man/delta.score.Rd
+c71633f0bb2315abb8f1f3e843ba09d2 *man/diffusion.Rd
+da8817a440f8f3f5e3d1b2d64e7a202d *man/fragment.Rd
+507101768f1a3ab26a7d3f198ec2793c *man/group.mreach.closeness.Rd
+d90c7a74702f8d4b09b4ced547998d88 *man/group.mreach.degree.Rd
+0286f4fabff7003b2efa29515fd900df *man/keyplayer-package.Rd
+c167c535cc2b8f0e054e950ac2b9a627 *man/kpcent.Rd
+edc1d6cd1aeab51f21a7b9bb66be8b2e *man/kpset.Rd
+29b5389c8d3586514e1ecc29bfc6a1bc *man/mreach.closeness.Rd
+9364061fe1fe612657cf19247509dc91 *man/mreach.degree.Rd

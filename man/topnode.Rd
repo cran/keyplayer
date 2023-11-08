@@ -4,8 +4,17 @@
 \alias{topnode}
 \title{Orders players by individual centrality from high to low}
 \usage{
-topnode(adj.matrix, type, M = Inf, T = ncol(adj.matrix), method,
-  binary = FALSE, cmode, large = TRUE, geodist.precomp = NULL)
+topnode(
+  adj.matrix,
+  type,
+  M = Inf,
+  T = ncol(adj.matrix),
+  method,
+  binary = FALSE,
+  cmode,
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{Matrix indicating the adjacency matrix of the network.}
@@ -69,4 +78,3 @@ A vector of indices by individual centrality from high to low
 \code{topnode} Orders players by individual centrality from high to low
 }
 \keyword{internal}
-

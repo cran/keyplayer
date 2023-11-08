@@ -4,8 +4,15 @@
 \alias{mreach.degree}
 \title{Compute the M-reach Degree Centrality Score in a Netwrok}
 \usage{
-mreach.degree(adj.matrix, node, M = Inf, binary = TRUE, cmode = "all",
-  large = TRUE, geodist.precomp = NULL)
+mreach.degree(
+  adj.matrix,
+  node,
+  M = Inf,
+  binary = TRUE,
+  cmode = "all",
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{Matrix indicating the adjacency matrix of the network.}
@@ -65,18 +72,15 @@ W <- matrix(
 mreach.degree(W,M=2,cmode="all",large=FALSE)
 
 }
-\author{
-Weihua An \email{weihuaan@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@indiana.edu}
-}
 \references{
 An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-Working Paper, Indiana Univeristy.\cr
+\emph{The R Journal}, 8(1): 257-268.\cr
 
 Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+version 2.3-2. \url{https://cran.r-project.org/package=sna}\cr
 
 Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+InterJournal, Complex Systems 1695. \url{https://igraph.org/} \cr
 }
 \seealso{
 \code{\link[sna]{geodist}};
@@ -85,4 +89,6 @@ InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
 \code{\link{kpcent}};
 \code{\link{kpset}}
 }
-
+\author{
+Weihua An \email{weihua.an@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
+}

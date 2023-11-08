@@ -4,8 +4,16 @@
 \alias{group.mreach.degree}
 \title{Compute the group-level mreach.degree Centrality Score in a Netwrok}
 \usage{
-group.mreach.degree(adj.matrix, nodes, M = Inf, method = "min",
-  binary = TRUE, cmode = "total", large = TRUE, geodist.precomp = NULL)
+group.mreach.degree(
+  adj.matrix,
+  nodes,
+  M = Inf,
+  method = "min",
+  binary = TRUE,
+  cmode = "total",
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{Matrix indicating the adjacency matrix of the network.}
@@ -49,7 +57,6 @@ the above information.
 \code{group.mreach.degree} computes the size of the reachable nodes from a particular node within M steps.
 }
 \author{
-Weihua An \email{weihuaan@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@indiana.edu}
+Weihua An \email{weihua.an@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 }
 \keyword{internal}
-

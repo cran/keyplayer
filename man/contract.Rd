@@ -83,15 +83,14 @@ P <- W *0.2
 contract(P,c(2,3),"union")
 
 }
-\author{
-Weihua An \email{weihuaan@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@indiana.edu}
-}
 \references{
 An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-Working Paper, Indiana Univeristy.\cr
+\emph{The R Journal}, 8(1): 257-268.\cr
 }
 \seealso{
 \code{\link{kpcent}};
 \code{\link{kpset}}
 }
-
+\author{
+Weihua An \email{weihua.an@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
+}

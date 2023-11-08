@@ -24,7 +24,7 @@ the chosen player(s).
 \description{
 \code{diffusion} measures player's ability to disseminate information through all the
 possible paths. For each path from i to j there is a reaching probability
-P_{ij}, which is specified in the inputted adjacency matrix.
+\eqn{P_{ij}}{P_{ij}}, which is specified in the inputted adjacency matrix.
 }
 \details{
 The diffusion centrality measures the expected number of information receivers from a particular node (Banerjee et.al. 2013). The measure can approximate the degree, Katz-Bonacich, or
@@ -51,12 +51,9 @@ P <- W *0.2
 diffusion(P, T = 2)
 
 }
-\author{
-Weihua An \email{weihuaan@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@indiana.edu}
-}
 \references{
 An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-Working Paper, Indiana Univeristy.\cr
+\emph{The R Journal}, 8(1): 257-268.\cr
 
 Banerjee, A., A. Chandrasekhar, E. Duflo, and M. Jackson (2013):
 "Diffusion of Microfinance," \emph{Science}, Vol. 341. p.363\cr
@@ -70,4 +67,6 @@ Working Paper.\cr
 \code{\link{kpcent}};
 \code{\link{kpset}}
 }
-
+\author{
+Weihua An \email{weihua.an@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
+}

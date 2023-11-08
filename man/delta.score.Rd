@@ -4,9 +4,21 @@
 \alias{delta.score}
 \title{The change on objective function for greedy search implimentation}
 \usage{
-delta.score(adj.matrix, candidate, residual, i, j, type, M = Inf,
-  T = ncol(adj.matrix), method, binary = FALSE, cmode, large = TRUE,
-  geodist.precomp = NULL)
+delta.score(
+  adj.matrix,
+  candidate,
+  residual,
+  i,
+  j,
+  type,
+  M = Inf,
+  T = ncol(adj.matrix),
+  method,
+  binary = FALSE,
+  cmode,
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{The adjacency matrix of the network.}
@@ -77,4 +89,3 @@ The change in group centrality score
 \code{delta.score} calculates the change in group centrality score.
 }
 \keyword{internal}
-

@@ -4,11 +4,13 @@
 \name{Friends}
 \alias{Friends}
 \title{The friendship network of 21 managers in a high-tech company}
-\format{A network object for the friendship network of 21 managers in a high-tech company (Krackhardt, 1987).
+\format{
+A network object for the friendship network of 21 managers in a high-tech company (Krackhardt, 1987).
 It is a directed network including 21 nodes and 60 edges. There are two node atrributes. "Dept" shows the department affiliations (1-4).
 "Level" shows the rank of the managers in the company (1-3).
 
- @source D. Krackhardt. "Cognitive social structures." Social Networks, 9:109-134, 1987.}
+ @source D. Krackhardt. "Cognitive social structures." Social Networks, 9:109-134, 1987.
+}
 \usage{
 data("Friends")
 }
@@ -16,4 +18,3 @@ data("Friends")
 The friendship network of 21 managers in a high-tech company
 }
 \keyword{datasets}
-

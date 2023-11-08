@@ -47,17 +47,17 @@
 #' mreach.degree score of the chosen node; or a data frame containing all
 #' the above information.
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-#' version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+#' version 2.3-2. \url{https://cran.r-project.org/package=sna}\cr
 #'
 #' Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-#' InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+#' InterJournal, Complex Systems 1695. \url{https://igraph.org/} \cr
 #'
 #'
 #' @examples
@@ -192,20 +192,20 @@ mreach.degree=function(adj.matrix, node, M = Inf, binary = TRUE, cmode = "all", 
 #' the above information. Note that the outdegree and indegree scores are normalized
 #' to [0,1]. This means that the total-degree score is between [0,2].
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Borgatti, Stephen P. (2006). "Identifying Sets of Key Players in a Network."
 #' \emph{Computational, Mathematical and Organizational Theory}, 12(1):21-34.\cr
 #'
 #' Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-#' version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+#' version 2.3-2. \url{https://cran.r-project.org/package=sna}\cr
 #'
 #' Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-#' InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+#' InterJournal, Complex Systems 1695. \url{https://igraph.org/} \cr
 #'
 #' Gil, J and Schmidt, S (1996). "The Origin of the Mexican Network of Power."
 #' Proceedings of the International Social Network Conference, Charleston, SC, 22-25.\cr
@@ -340,20 +340,20 @@ mreach.closeness=function(adj.matrix, node, M = Inf, binary = FALSE, cmode = "al
 #' @return Vector indicating fragment score(s) of the chosen player(s).
 #' Score is normalized to [0,1].
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Borgatti, Stephen P. 2006. "Identifying Sets of Key Players in a Network."
 #' \emph{Computational, Mathematical and Organizational Theory}, 12(1):21-34.\cr
 #'
 #' Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-#' version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+#' version 2.3-2. \url{https://cran.r-project.org/package=sna}\cr
 #'
 #' Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-#' InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+#' InterJournal, Complex Systems 1695. \url{https://igraph.org/} \cr
 #'
 #' @examples
 #' # Create a 5x5 weighted and directed adjacency matrix, where edge values
@@ -460,7 +460,7 @@ fragment=function(adj.matrix, nodes, M=Inf, binary=FALSE, large=TRUE, geodist.pr
 #'
 #' \code{diffusion} measures player's ability to disseminate information through all the
 #' possible paths. For each path from i to j there is a reaching probability
-#' P_{ij}, which is specified in the inputted adjacency matrix.
+#' \eqn{P_{ij}}{P_{ij}}, which is specified in the inputted adjacency matrix.
 #'
 #'
 #' @param adj.matrix Matrix indicating the probability matrix.
@@ -483,11 +483,11 @@ fragment=function(adj.matrix, nodes, M=Inf, binary=FALSE, large=TRUE, geodist.pr
 #' With information on q and the adjacency matrix, the probability matrix P can easily be calculated by their product.
 #'
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Banerjee, A., A. Chandrasekhar, E. Duflo, and M. Jackson (2013):
 #' "Diffusion of Microfinance," \emph{Science}, Vol. 341. p.363\cr
@@ -598,11 +598,11 @@ diffusion=function(adj.matrix, node, T=ncol(adj.matrix)){
 #' @return A new adjacency matrix after contracting the chosen nodes (named
 #' \code{set}).
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #'
 #' @examples
@@ -772,7 +772,7 @@ contract=function(adj.matrix, nodes, method=c("min","max","union","add")){
 #' mreach.degree score of the chosen player(s); or a data frame containing all
 #' the above information.
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @keywords internal
 
@@ -926,7 +926,7 @@ group.mreach.degree=function(adj.matrix, nodes, M = Inf, method = "min", binary 
 #' the above information. Note that the outdegree and indegree scores are normalized
 #' to [0,1]. This means that the total-degree score is between [0,2].
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @keywords internal
 
@@ -1140,13 +1140,13 @@ group.mreach.closeness=function(adj.matrix, nodes, M = Inf, method = "min", bina
 #' 0.5 to reach C, then C can be reached from merged AB with probability
 #' 1-(1-0.2)*(1-0.5)=0.6 according to the union criterion.}
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua. (2015). "Multilevel Meta Network Analysis with Application to Studying Network Dynamics of Network Interventions." \emph{Social Networks} 43: 48-56.\cr
 #'
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Banerjee, A., A. Chandrasekhar, E. Duflo, and M. Jackson (2013):
 #' "Diffusion of Microfinance," \emph{Science}, Vol. 341. p.363\cr
@@ -1159,10 +1159,10 @@ group.mreach.closeness=function(adj.matrix, nodes, M = Inf, method = "min", bina
 #' \emph{Computational, Mathematical and Organizational Theory}, 12(1):21-34.\cr
 #'
 #' Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-#' version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+#' version 2.3-2. \url{https://cran.r-project.org/package=sna}\cr
 #'
 #' Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-#' InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+#' InterJournal, Complex Systems 1695. \url{https://igraph.org/} \cr
 #'
 #' @seealso
 #' \code{\link{contract}}
@@ -1707,21 +1707,21 @@ topnode=function(adj.matrix, type, M=Inf, T=ncol(adj.matrix),method, binary=FALS
 #' and swaps the two if it improves the centrality score of the candidate set. It repeats this process until exhausting the specified iterations and rounds
 #' and then compare and combine the results from the clusters.
 #'
-#' @author Weihua An \email{weihuaan@@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@@indiana.edu}
+#' @author Weihua An \email{weihua.an@@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 #'
 #' @references
 #' An, Weihua. (2015). "Multilevel Meta Network Analysis with Application to Studying Network Dynamics of Network Interventions." \emph{Social Networks} 43: 48-56.\cr
 #'
 #' An, Weihua and Yu-Hsin Liu (2016). "keyplayer: An R Package for Locating Key Players in Social Networks."
-#' Working Paper, Indiana Univeristy.\cr
+#' \emph{The R Journal}, 8(1): 257-268.\cr
 #'
 #' Borgatti, Stephen P. (2006). "Identifying Sets of Key Players in a Network." \emph{Computational, Mathematical and Organizational Theory}, 12(1):21-34.\cr
 #'
 #' Butts, Carter T. (2014). sna: Tools for Social Network Analysis. R package
-#' version 2.3-2. \url{http://CRAN.R-project.org/package=sna}\cr
+#' version 2.3-2. \url{https://CRAN.R-project.org/package=sna}\cr
 #'
 #' Csardi, G and Nepusz, T (2006). "The igraph software package for complex network research."
-#' InterJournal, Complex Systems 1695. \url{http://igraph.org} \cr
+#' InterJournal, Complex Systems 1695. \url{https://igraph.org} \cr
 #'
 #' @seealso
 #' \code{\link{kpcent}}

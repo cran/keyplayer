@@ -4,8 +4,17 @@
 \alias{kpnode}
 \title{Return the most central player in sequentially reduced networks}
 \usage{
-kpnode(adj.matrix, type, M = Inf, T = ncol(adj.matrix), method,
-  binary = FALSE, cmode, large = TRUE, geodist.precomp = NULL)
+kpnode(
+  adj.matrix,
+  type,
+  M = Inf,
+  T = ncol(adj.matrix),
+  method,
+  binary = FALSE,
+  cmode,
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{Matrix indicating the adjacency matrix of the network.}
@@ -68,4 +77,3 @@ The most central player and its centrality score
 \code{kpnode} returns the node with the highest centrality score.
 }
 \keyword{internal}
-

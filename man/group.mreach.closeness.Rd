@@ -4,8 +4,16 @@
 \alias{group.mreach.closeness}
 \title{Compute the Group-level mreach.closeness Centrality Score in a Netwrok}
 \usage{
-group.mreach.closeness(adj.matrix, nodes, M = Inf, method = "min",
-  binary = FALSE, cmode = "total", large = TRUE, geodist.precomp = NULL)
+group.mreach.closeness(
+  adj.matrix,
+  nodes,
+  M = Inf,
+  method = "min",
+  binary = FALSE,
+  cmode = "total",
+  large = TRUE,
+  geodist.precomp = NULL
+)
 }
 \arguments{
 \item{adj.matrix}{Matrix indicating the adjacency matrix of the network.}
@@ -52,7 +60,6 @@ using the (inverse) geodistance as weights.
 The edge values should be properly interpreted as distances.
 }
 \author{
-Weihua An \email{weihuaan@indiana.edu}; Yu-Hsin Liu \email{yuhsliu@indiana.edu}
+Weihua An \email{weihua.an@emory.edu}; Yu-Hsin Liu \email{ugeneliu@meta.com}
 }
 \keyword{internal}
-
